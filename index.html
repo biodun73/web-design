@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <form action="" class="search">
+            <input type="search" name="search" id="" size="20">
+            <input type="submit" name="" id="" value="Search">
+        </form>
+         <div class="head-page">
+            <ul>
+                <li>Home</li>
+                <li>Company</li>
+                <li>Products</li>
+                <li>Network</li>
+                <li>Support</li>
+                <li>Investors</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <script src="javaScript.js"></script>
+        <div class="container">
+            <div class="subcon fade">
+                <img src="transport.png" alt="" style="width: 600px; height: 400px; border-radius: 10px;">
+            </div>
+            <div class="subcon fade">
+                <img src="Transport2.png" alt="" style="width: 600px; height: 400px; border-radius: 10px;">
+            </div>
+        </div>
+            <!--slider-->
+            <div style="text-align: center;">
+                <span class="dash"></span>
+                <span class="dash"></span>
+            </div>
+
+            <script>
+                
+                    //variable//
+                    var slides = 0;
+                    function mslides() {
+                        var i;
+                        var slider = document.getElementsByClassName("subcon");
+                        var dash = document.getElementsByClassName("dash");
+                        //for loop//
+                        for (i = 0; i < slider.length; i++) {
+                            slider[i].style.display = "none";
+                        }
+                        slides++;
+
+                        if (slides > slider.length) {
+                            slides = 1;
+                        }
+                        //for loop for slider//
+                        slider[slides - 1].style.display = "block";
+                        setTimeout(mslides, 3000);
+                    }
+                    mslides();
+            </script>
+      <div class="company">
+       <h1>Our Company</h1>
+       <p>we are freight forwarder agent, our company organizes shipments for individuals or
+         corporations to get goods from the manufacturer or producer to a market,
+         customer or final point of distribution.Our project team is the group of people responsible for executing the
+         tasks and producing deliverables outlined in the
+         project plan and schedule, as directed by the project manager
+       </p>
+        <img src="team.jpg" alt="">               
+     </div>
+
+    </section>
+    <footer>
+       <div class="foot-page">
+        <div class="about-us">
+            <h2><a href="#">About-Us</a></h2>
+        </div>
+        <div class="contact-us">
+            <h2><a href="#">Contact-Us</a></h2>
+        </div>
+        <div class="icon">
+            <a href="#"><img src="facebook.png" alt="" width="30"></a>
+            <a href="#"><img src="twitter.png" alt="" width="30"></a>
+            <a href="#"><img src="youtube.png" alt="" width="30"></a>
+            <a href="#"><img src="instagram.png" alt="" width="30"></a>
+        </div>
+       </div>
+    </footer>
+</body>
+</html>

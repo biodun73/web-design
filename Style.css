@@ -1,0 +1,125 @@
+/*head of the main page*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.search{
+    float: right;
+    margin-top: 5px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.head-page{
+    margin-top: 70px;
+    width: 100%;
+    height: 80px;
+    font-size: 25px;
+    overflow: hidden;
+    background-color: crimson;
+}
+
+.head-page ul li{
+    color: black;
+    width: 100px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 20px;
+    list-style: none;
+      
+}
+.head-page ul li:hover{
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: coral;
+}
+
+.company img{
+    width: 600px;
+    height: 400px;
+}
+.company{
+     width: 600px;
+     height: 400px;
+     float: right;
+     text-align: justify;
+     margin-top: -50px;
+     margin-right: 20px;
+     margin-bottom: 200px;
+}
+.container {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+.subcon {
+    position: absolute;
+    display: none;
+}
+
+.dash {
+    cursor: pointer;
+    width: 50px;
+    height: 8px;
+    margin-top: 10px;
+    background-color: #f5f4f2;
+    display: inline-block;
+}
+
+.change {
+    background-color: #fa8e9c;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 2;
+    }
+}
+
+body{
+    background-color:white ;
+}
+.foot-page{
+    float:left;
+    width: 100%;
+    height: 100px;
+    background-color: crimson;
+}
+.icon{
+    float: right;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+.about-us{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.about-us a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact-us{
+    float: clear;
+    margin-top: 20px;
+    margin-left: 550px;
+}
+.contact-us a{
+    color: black;
+    text-decoration: none;
+}
